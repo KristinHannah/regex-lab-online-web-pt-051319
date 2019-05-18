@@ -37,5 +37,9 @@ end
 
 def valid_phone_number?(phone)
  phone_num = phone.scan(/\d{10}/) 
-    return phone_num
+    if phone_num == []
+      return false
+    else 
+      return true
+    end 
 end
