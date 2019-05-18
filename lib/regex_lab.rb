@@ -40,13 +40,7 @@ def valid_phone_number?(phone)
  phone_num2 = phone.scan(/\(+\d{3}+\)\d{3}+-\d{4}/)
  phone_num3 = phone.scan(/\d{3}+\s+\d{3}+\s+\d{4}/)
  phone_num4 = phone.scan(/\(+\d{3}+\)\d{7}/)
-    if phone_num1 == [] 
-      return false
-    elsif phone_num2 == [] 
-      return false
-    elsif phone_num3 == [] 
-      return false
-    elsif phone_num4 == [] 
+    if phone_num1 == [] && phone_num2 == [] && phone_num3 == [] && phone_num4 == [] 
       return false
     else 
       return true
